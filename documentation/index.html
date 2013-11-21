@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Documentation - Xiara - Responsive Onepage Parallax Theme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style>
+    .clear {clear: both;}
+    .button_rec  a{
+padding: 7px 18px;
+font-size:13px;
+top:10px;
+font-weight: bold;
+border: 2px solid #b7b7b7;
+-webkit-transition: border-color 0.3s linear, color 0.3s linear;
+-moz-transition: border-color 0.3s linear, color 0.3s linear;
+-o-transition: border-color 0.3s linear, color 0.3s linear;
+transition: border-color 0.3s linear, color 0.3s linear;
+color: #9C9C9C!important;
+letter-spacing: 1.5px;
+position: relative;
+display: inline-block; float: left; margin-right:20px;
+}
+.uppercase {text-transform: uppercase;}
+.button_rec a:hover {border: 2px solid #2f353e;color: #2f353e!important; text-decoration: none;}
+</style>
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container">
+            <div class="row">
+              <div class="span7">
+                 <div id="logo"><img src="assets/img/logo.png" alt=""></div>
+              </div>
+              <div class="span5 buttonshead">
+              
+                 <a href="http://www.bypixels.com/purchase/town" target="_blank"><button type="button" class="btn btn-danger right">Purchase Theme</button></a>
+                 <a href="http://www.bypixels.com/themes/town" target="_blank"><button type="button" class="btn btn-danger right">View demo</button></a>
+              </div>
+
+            </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>Documentation</h1>
+    <p class="lead">Town - Responsive Onepage Template</p>
+  </div>
+</header>
+
+<div class="custom_nav">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <ul class="nav" id="scrollnav">
+          <li><a href="#start"> Start</a></li>
+          <li><a href="#grid">The grid system</a></li>
+          <li><a href="#css">CSS</a></li>
+          <li><a href="#javascript">Javascript</a></li>
+          <li><a href="#icons">Retina Icons</a></li>
+          <li><a href="#shortcodes">Shortcodes</a></li>
+          <li><a href="#style">Style</a></li>
+          <li><a href="#source">Source & Credits</a></li>
+        </ul>
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      
+      <div class="span12">
+
+        <!-- Dropdowns
+        ================================================== -->
+      <section id="start">
+          <div class="page-header">
+            <h1>Start</h1>
+          </div>
+          <p>Thank you so much for purchasing my template. If you have any questions that are beyond the scope of this help file, please feel free to contact us.</p>
+          
+          <ul>
+            <li>Created: 26/08/2013</li>
+            <li>Latest Update: 14/09/2013</li>
+            <li>By: <a href="http://www.themeforest.net/user/breecode" target="_blank">Breecode</a></li>
+            <li><a href="http://bypixels.com/themes/town" target="_blank">http://bypixels.com/themes/Town</a></li>
+            <li>Email: <a href="mailto:support@bypixels.com">support@bypixels.com</a></li>
+          </ul>
+        </section>
+        <hr class="bs-docs-separator">
+
+      <section id="grid">
+  
+            <h2>The Grid System</h2>
+        
+
+          <h4>One Columns</h4>
+          <p>If you want one columns use this markup.</p>
+
+          <pre class="prettyprint linenums">
+&lt;div class="span12"&gt; 
+  CONTENT GOES HERE
+&lt;/div&gt;&lt;!-- end span12 --&gt;</pre>
+
+          <h4>Two Columns</h4>
+  
+          <pre class="prettyprint linenums">
+&lt;div class="span6"&gt; 
+  CONTENT GOES HERE
+&lt;/div&gt;&lt;!-- end span6 --&gt;
+
+&lt;div class="span6"&gt; 
+  CONTENT GOES HERE
+&lt;/div&gt;&lt;!-- end span6 --&gt;</pre>
+
+
+
+<h4>Three Columns</h4>
+
+<pre class="prettyprint linenums">
+&lt;div class="span4"&gt; 
+    CONTENT GOES HERE
+&lt;/div&gt;&lt;!-- end span4 --&gt;
+
+&lt;div class="span4"&gt; 
+    CONTENT GOES HERE
+&lt;/div&gt;&lt;!-- end span4 --&gt;
+
+&lt;div class="span4"&gt; 
+    CONTENT GOES HERE
+&lt;/div&gt;&lt;!-- end span4 --&gt;
+</pre>
+
+<h4>Four Columns</h4>
+
+<pre class="prettyprint linenums">
+&lt;div class="span3"&gt; 
+    CONTENT GOES HERE
+&lt;/div&gt;&lt;!-- end span3 --&gt;
+
+&lt;div class="span3"&gt; 
+    CONTENT GOES HERE
+&lt;/div&gt;&lt;!-- end span3 --&gt;
+
+&lt;div class="span3"&gt; 
+    CONTENT GOES HERE
+&lt;/div&gt;&lt;!-- end span3 --&gt;
+
+&lt;div class="span3"&gt; 
+    CONTENT GOES HERE
+&lt;/div&gt;&lt;!-- end span3 --&gt;
+</pre>
+
+<p>Town use Bootstrap. For more information about the grid visit <a href="http://twitter.github.com/bootstrap/">http://twitter.github.com/bootstrap/</a></p>
+
+
+
+
+</section>
+
+
+
+<hr class="bs-docs-separator">
+        <!-- Grid Groups
+        ================================================== -->
+     
+<section id="css">
+
+<h2>CSS Structure</h2>
+<P>This template have a lot of CSS, here is the structure</P>  
+
+<pre>
+1- BASE 
+2- HEADER & MAIN NAV 
+2B-ABOUT US
+3- PAGE TITLE
+4- RESPONSIVE NAV
+5- SLIDE REVOLUTION & CUSTOM CAPTIONS
+6- SKILLS BARS
+7- TEAM
+8- TESTIMONIALS
+9- PORTFOLIO FILTERS
+10- PORTFOLIO 
+11- BLOG  
+12- TWITTER FEED 
+13- PRICING TABLES
+14- CONTACT
+15- FOOTER
+16- VIDEO RESPONSIVE
+17- BUTTONS
+18- ICONS
+19- RETINA ICONS
+20- CAROUSEL
+21- PARALLAX
+22- MEDIA QUERIES
+</pre>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<div class="bs-docs-separator"></div>
+ <section id="javascript">
+         <h2>Custom.js</h2>
+         <p>All the javascript is in the custom.js file. USe it to modify settings for Sliders, Portfolio, Twitter, Flickr Widget, etc.</p>
+<pre class="prettyprint linenums">
+//ISOTOPE
+
+$(document).ready(function() {
+
+      // cache container
+var $container = $('#container-portfolio');
+// initialize isotope
+$container.isotope({
+  // options...
+    
+});
+
+// filter items when filter link is clicked
+$('#filters a').click(function(){
+  var selector = $(this).attr('data-filter');
+  $container.isotope({ filter: selector });
+  return false;
+});
+        
+      
+});
+
+
+</pre>
+
+
+
+<div class="row">
+  <div class="span6">
+    <h4>Twitter Feed</h4>
+   <pre class="prettyprint linenums">
+  $(function($){
+"use strict"; 
+  $("#twitterfeed").tweet({
+    username: "bypixels", /*Enter your Twitter username */
+    modpath: 'js/twitter/', /* director of the twitter folder : ABSOLUTLY DIRECT LINK OF YOUR TWITTER FOLDER */
+    page: 1, /*How many tweets to show at a time*/
+    avatar_size: null, 
+    count: 5, /*Total counts of tweets. */
+    loading_text: "Loading latest tweets..." /*Loading text*/
+  });     
+  
+});
+</pre>
+<p>Replace the <code>username</code> to your username.</p>
+  </div>
+
+  <div class="span6">
+    <h4>Ajax portfolio</h4>
+  If you click in the portfolio item and the slide dont brings the HTML do this:
+
+  First - Check that you portfolio item is linking to an existing HTML file.
+  Second - If you are opening the file from your computer make sure that have town folder in a local server. 
+
+  
+<p>Replace the <code>username</code> to your username.</p>
+  </div>
+</div>
+
+
+</section>
+
+
+
+<div class="bs-docs-separator"></div>
+
+
+
+
+<section id="icons">
+
+<h2>Retina Icons</h2>
+<p>The icon itself is powered by font awesome, the code is this:</p>
+<code>&lt;i class="fa_icon icon-align-justify icon-3x"&gt;&lt;/i&gt;</code>
+
+<br><br>
+<h4>How to change an icon?</h4>
+<p>As you can see <code>icon-align-justify</code> is the name of the icon, you have to change the name to change the icon. Here you can see a complete list of icons, select the name and
+replace it.</p> 
+
+<p><a href="http://fortawesome.github.io/Font-Awesome/cheatsheet/" target="_blank">The complete Font Awesome 3.2.1 icon reference</a></p>
+
+
+<br>
+<h4>Size of the icon</h4>
+<code>&lt;i class="fa_icon icon-align-justify icon-3x"&gt;&lt;/i&gt;</code>
+
+<p>Has you can see the icon have a <code>icon-3x</code>. To change the size of an icon just change the number like</p>
+<p><code>icon-2x</code> <code>icon-3x</code> <code>icon-4x</code></p>
+
+<br>
+<h4>Services icons using Retina Icons</h4>
+<div class="row">
+  
+  <div class="span8">
+    <p>Here is the structure of the services icons</p>
+<pre  class="prettyprint linenums">
+&lt;div class="services_icon_container hi-icon-effect-1 hi-icon-effect-1a"&gt;
+  &lt;div class="span6"&gt;
+    &lt;div class="icon_wrapper"&gt;&lt;a href="#" class="hi-icon"&gt;&lt;i class="fa_icon icon-align-justify icon-3x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;h2 class="uppercase"&gt;100% Responsive&lt;/h2&gt;      
+  &lt;/div&gt;&lt;!--span6--&gt;
+&lt;/div&gt;&lt;!--services_icon_container--&gt;
+</pre>
+<p>There is a container call <code>.services_icon_container</code> what wraps all the icons. To create a icon do this </p>
+<pre class="prettyprint linenums">
+&lt;div class="icon_wrapper"&gt;&lt;a href="#" class="hi-icon"&gt;&lt;i class="fa_icon icon-align-justify icon-3x"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+</pre>
+  </div>
+
+   <div class="span4">
+    <img src="assets/img/icons.jpg" alt="">
+  </div>
+</div>
+
+
+</section>
+
+
+
+
+
+<hr class="bs-docs-separator">
+
+
+
+<section id="shortcodes">
+<h2>Video Style Background</h2>
+
+<p>To add a video just go to youtube, select your video. Click in share, and copy the URL. Then go to your index-4.html file where you have the video and paste the URL from youtube embed code. (look at screenshot two). Click in the image to amplify it.</p>
+
+<div class="row">
+  <div class="span6"><img src="assets/img/embed.jpg" alt=""></div>
+  <div class="span6"><a href="assets/img/embed_r.jpg"><img src="assets/img/embed_r.jpg" alt=""></a></div>
+</div>
+
+<h2>Buttons</h2>
+
+        <a href="#" class="button small color">Small Button</a>
+        <a href="#" class="button small gray">Small Button</a>
+        <a href="#" class="button small black">Small Button</a>
+
+        <div class="clear"></div>
+
+        <a href="#" class="button medium color">Medium Button</a>
+        <a href="#" class="button medium gray">Medium Button</a>
+        <a href="#" class="button medium black">Medium Button</a>
+
+        <div class="clear"></div>
+
+        <a href="#" class="button large color">Large Button</a>
+        <a href="#" class="button large gray">Large Button</a>
+        <a href="#" class="button large black">Large Button</a>
+
+<br><br>
+  <p>To make a button use the class <code>.button</code>.</p>
+
+<pre class="prettyprint linenums">
+&lt;a href="#" class="button small color"&gt;Small Button&lt;/a&gt;
+&lt;a href="#" class="button small gray">Small Button&lt;/a&gt;
+&lt;a href="#" class="button small black"&gt;Small Button&lt;/a&gt;
+&lt;a href="#" class="button medium color"&gt;Medium Button&lt;/a&gt;
+&lt;a href="#" class="button medium gray"&gt;Medium Button&lt;/a&gt;
+&lt;a href="#" class="button medium black"&gt;Medium Button&lt;/a&gt;
+&lt;a href="#" class="button large color"&gt;Large Button&lt;/a&gt;
+&lt;a href="#" class="button large gray"&gt;Large Button&lt;/a&gt;
+&lt;a href="#" class="button large black"&gt;Large Button&lt;/a&gt;
+</pre>
+
+<br><br>
+
+<h2>Rectangle Buttons</h2>
+<div class="button_rec uppercase"><a href="#">Read more</a></div>
+<div class="button_rec"><a href="#">Read more</a></div>
+<div class="clear"></div>
+<br><br>
+
+<p>To make a button use the class <code>.button_rec</code>. use class <code>.uppercase</code> to have uppercase font.</p>
+
+
+<pre class="prettyprint linenums">
+&lt;a href="#" class="button_rec uppercase"&gt;Read more&lt;/a&gt;
+&lt;a href="#" class="button_rec"&gt;Read more&lt;/a&gt;
+</pre>
+
+<br>
+<br>
+<h4>Contact Form Ready</h4>
+<p>Town comes with a send.php file that allows you to send emails through the contact form. All you have to do is put your email in line 18.</p>
+<p>Remember to put the send.php file in the same folder that the index.html file.<p>
+
+</section>
+            
+
+<hr class="bs-docs-separator">
+
+
+
+
+<section id="style">
+
+<h2>Skin colors </h2>
+<p>Town comes with beautiful skin colors, to change the skin go to style.css and change this line <code>@import url("css/skins/blue.css");</code></p>
+
+<p><code>Available skins colors: orange.css blue.css red.css green.css yellow.css gray.css </code></p>
+
+</section>
+
+
+
+<section id="source"><h2>Source & Credits</h2>
+  <p>I've used the following images, icons or other files as listed.</p>
+  <ul>
+    
+    
+    <li><a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a></li>
+    <li><a href="http://jquery.com" target="_blank">Jquery Library</a></li>
+    <li><a href="http://isotope.metafizzy.co/" target="_blank">Isotope</a></li>
+    <li><a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/" target="_blank">Jquery PrettyPhoto</a></li>
+    <li><a href="http://tweet.seaofclouds.com/" target="_blank">Jquery Tweets</a></li>
+    <li><a href="http://www.kelvinluck.com/2006/05/switch-stylesheets-with-jquery/" target="_blank">Styleswitcher</a></li>
+    <li><a href="https://github.com/Wilto/Dynamic-Carousel/" target="_blank">Carousel Slider</a></li>
+    <li><a href="http://github.com/davist11/jQuery-One-Page-Nav" target="_blank">One Page Nav</a></li>
+    <li><a href="http://flesler.blogspot.com" target="_blank">Scroll to</a></li>
+    <li><a href="http://subtlepatterns.com/" target="_blank">Subtlepatterns</a></li>
+    <li><a href="http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848" target="_blank">Revolution Slider</a></li>
+ 
+      
+  </ul>
+
+  
+
+
+   <div class="bs-docs-separator"></div>
+
+
+<p>Images by <a href="http://www.flickr.com/photos/astragony/" target="_blank">Daniel Zedda</a></p>
+
+</section>
+
+
+
+
+
+
+ 
+      </div>
+    </div>
+
+  </div>
+
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>Thank you so much for purchasing this theme. Design and code by<a href="http://themeforest.net/user/breecode?ref=breecode" target="_blank"> breecode</a></p>
+        <p>You can find this theme only in <a href="http://www.themeforest.net?ref=breecode" target="_blank">Themeforest</a></p>
+        
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/google-code-prettify/prettify.js"></script>
+
+<script src="assets/js/bootstrap-tooltip.js"></script>
+<script src="assets/js/bootstrap-popover.js"></script>
+<script src="assets/js/bootstrap-button.js"></script>
+<script src="assets/js/bootstrap-collapse.js"></script>
+<script src="assets/js/bootstrap-carousel.js"></script>
+<script src="assets/js/bootstrap-typeahead.js"></script>
+<script src="assets/js/bootstrap-affix.js"></script>
+<script src="assets/js/application.js"></script>
+    
+
+
+<script src="assets/js/jquery.scrollTo.js"></script>
+<script src="assets/js/jquery.nav.js"></script>
+
+
+
+ <script type="text/javascript" language="javascript">
+
+  $(function () {
+    $('#scrollnav').onePageNav();
+    
+    var $win = $(window);
+
+    $win.scroll(function () {
+      if ($win.scrollTop() > 260)
+        $(".custom_nav").css({
+        position : 'fixed',
+        // top : '20px'
+      });
+
+    else if ($win.scrollTop() < 400)
+        $(".custom_nav").css({
+        position : 'relative',
+      //  top : '20px'
+      });
+    });
+  });
+    </script>
+
+
+</body>
+</html>
