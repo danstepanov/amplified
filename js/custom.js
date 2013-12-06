@@ -151,7 +151,7 @@ $(document).ready(function() {
 
       if ($(this).hasClass('active')){
       } else 
-      { lastIndex = index;
+     { lastIndex = index;
       index = $(this).index();
       $items.removeClass('active');
       $(this).addClass('active');
