@@ -1,17 +1,13 @@
-
-
 <?
 
 $name=$_POST['name'];
-$Email=$_POST['email'];
-$website=$_POST['url'];
+$email=$_POST['email'];
 $message=$_POST['message'];
 
 
     
     $body .= "Name: " . $name . "\n"; 
-    $body .= "Email: " . $Email . "\n"; 
-    $body .= "Website: " . $website . "\n"; 
+    $body .= "Email: " . $email . "\n"; 
     $body .= "Message: " . $message . "\n"; 
 
     //replace with your email
