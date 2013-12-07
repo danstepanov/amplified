@@ -774,7 +774,10 @@
 				<h3>Send us a message</h3>
 			</div>
 			<div id="response">
-				<form method="post" class="reply-input" action="send.php">
+				<form method="post" class="reply-input" action="response.php">
+					<input type=hidden name="sort_items" value="order:FormType,Name,Email,Phone,Message"/>
+					<input type="hidden" name="FormType" value="Contact Us"/>
+					<input type="hidden" name="env_report" value="REMOTE_ADDR,HTTP_USER_AGENT"/>
 					<div class="span6">
 						<div class="input-block">
 							<input type="text" name="name" id="comment-name" required="" value="Your name (required)" onblur="if(this.value=='')this.value='Your name (required)'" onfocus="if(this.value=='Your name (required)')this.value=''"/>
