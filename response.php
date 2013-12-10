@@ -22,17 +22,6 @@
 
 <body id="home">
 
-<!-- GOOGLE TRACKING ANALYTICS -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-39835762-1', 'amplified.us');
-  ga('send', 'pageview');
-
-</script>
 
 <!-- *** HEADER START *** -->
 <div id="top"></div>
@@ -77,25 +66,17 @@
 </div>
 <!-- *** HEADER END *** -->
 
-<?
+<?php
        
-        php include 'www_misc/contact_res/formmail.php';
+        include 'www_misc/contact_res/formmail.php';
         echo '<br /><br /><a href="'.$_SERVER['HTTP_REFERER'].'">Return</a>';
 ?>
-</body>
-</html>
- 
-To view this error, submit the message and then View Source on the resulting page.
- 
-Correct version:
- 
-<?php
 
 <div id="footer">
 	<div class="container">
 		<div class="row">
 			<div class="span3">
-				<h3>"What were all about</h3>
+				<h3>"What we're all about</h3>
 				We are a marketing company that uses the unique campus culture of Penn State to promote and grow our client."
 				<ul class="social_links_footer">
 					<li>
