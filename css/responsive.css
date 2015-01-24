@@ -1,0 +1,57 @@
+
+  /*	-	THE BANNER CONTAINER (Padding, Shadow, Border etc. )	-	*/
+
+  .bannercontainer {
+		padding:0px;
+		background-color:#fff;
+		width:960px;
+		position:relative;
+		position:relative;
+		margin-left:auto;
+		margin-right:auto;
+
+
+	}
+
+  .banner{
+		width:960px;
+		height:500px;
+		position:relative;
+		overflow:hidden;
+   }
+   
+
+
+
+  /*	THE MEDIA CHOOSER TO SET DIFFERENT SIZES OF THE CONTAINER DEPENDING ON THE SCREEN SIZE    */
+   @media only screen and (min-width: 768px) and (max-width: 959px) {
+
+ 		  .banner, .bannercontainer			{	width:760px; height:395px;}
+
+
+
+
+   }
+
+   @media only screen and (min-width: 480px) and (max-width: 767px) {
+		   .banner, .bannercontainer		{	width:420px; height:220px;	}
+
+
+
+
+   }
+
+   @media only screen and (min-width: 0px) and (max-width: 479px) {
+			.banner, .bannercontainer		{	width:320px;height:166px;	}
+
+
+
+
+   }
+
+
+
+
+
+
+
